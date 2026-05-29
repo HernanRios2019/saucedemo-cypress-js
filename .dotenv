@@ -1,0 +1,3 @@
+CYPRESS_STANDARD_USER=standard_user
+CYPRESS_VALID_PASSWORD=secret_sauce
+CYPRESS_INVALID_PASSWORD=invalid_password
