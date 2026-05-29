@@ -1,0 +1,25 @@
+{
+  "name": "saucedemo-cypress",
+  "version": "1.0.0",
+  "description": "This project tests the saucedemo website with Cypress and TypeScript.",
+  "homepage": "https://github.com/HernanRios2019/saucedemo-cypress-js#readme",
+  "bugs": {
+    "url": "https://github.com/HernanRios2019/saucedemo-cypress-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HernanRios2019/saucedemo-cypress-js.git"
+  },
+  "license": "ISC",
+  "author": "Hernan Rios",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^15.16.0",
+    "dotenv": "^17.4.2"
+  }
+}
