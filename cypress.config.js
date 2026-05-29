@@ -10,6 +10,8 @@ module.exports = defineConfig({
     STANDARD_USER: process.env.CYPRESS_STANDARD_USER,
     VALID_PASSWORD: process.env.CYPRESS_VALID_PASSWORD,
     INVALID_PASSWORD: process.env.CYPRESS_INVALID_PASSWORD,
+    PRODUCT_NAME_1: process.env.CYPRESS_PRODUCT_NAME_1,
+    PRODUCT_NAME_2: process.env.CYPRESS_PRODUCT_NAME_2,
   },
 
   e2e: {
