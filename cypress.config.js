@@ -1,11 +1,16 @@
 const { defineConfig } = require("cypress");
 
-// Load environment variables from .env file
-require('dotenv').config(); 
+// Load environment variables from the local dotenv file.
+require('dotenv').config({ path: '.dotenv', quiet: true });
 
 
 module.exports = defineConfig({
-  allowCypressEnv: false,
+  allowCypressEnv: true,
+  env: {
+    STANDARD_USER: process.env.CYPRESS_STANDARD_USER,
+    VALID_PASSWORD: process.env.CYPRESS_VALID_PASSWORD,
+    INVALID_PASSWORD: process.env.CYPRESS_INVALID_PASSWORD,
+  },
 
   e2e: {
     setupNodeEvents(on, config) {
