@@ -42,3 +42,7 @@ npm run "cy:run edge"
 ## Environment Variables
 
 The project uses a local `.dotenv` file to load test data and API configuration.
+
+## Reports
+The report is generated in the file index.html in the cypress/results path.
+The screenshots are generated in the cypress/screenshots path.
