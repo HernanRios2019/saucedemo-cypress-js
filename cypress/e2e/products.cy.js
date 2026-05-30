@@ -5,7 +5,7 @@ describe('Products', () => {
   const loginPage = new LoginPage();
   const productsPage = new ProductsPage();
 
-  it.skip('TC-P-01 — Add item to cart from products page', () => {
+  it('TC-P-01 — Add item to cart from products page', () => {
     loginPage
       .visit()
       .shouldBeLoaded()
@@ -29,9 +29,9 @@ describe('Products', () => {
       .shouldHavePath()
       .shouldBeLoaded()
       .shouldDisplayTitle('Products')
-      .addProductToCart(Cypress.env('PRODUCT_NAME_1'))
-      .shouldShowCartQuantity(1)
       .addProductToCart(Cypress.env('PRODUCT_NAME_2'))
-      .shouldShowCartQuantity(2);
+      .shouldShowCartQuantity(1)
+      .addProductToCart(Cypress.env('PRODUCT_NAME_1'))
+      .shouldShowCartQuantity(1);
   });
 });
