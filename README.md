@@ -43,7 +43,7 @@ npm run "cy:run chrome"
 Run tests in Edge:
 
 ```bash
-npm run "cy:run edge"
+npm run "cy:run firefox"
 ```
 
 ## Environment Variables
