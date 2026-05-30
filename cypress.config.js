@@ -9,7 +9,7 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     reportDir: 'cypress/results',
-    overwrite: false,
+    overwrite: true,
     html: true,
     json: false,
   },
@@ -21,6 +21,7 @@ module.exports = defineConfig({
     INVALID_PASSWORD: process.env.CYPRESS_INVALID_PASSWORD,
     PRODUCT_NAME_1: process.env.CYPRESS_PRODUCT_NAME_1,
     PRODUCT_NAME_2: process.env.CYPRESS_PRODUCT_NAME_2,
+    API_URL: process.env.CYPRESS_API_URL,
   },
 
   e2e: {
