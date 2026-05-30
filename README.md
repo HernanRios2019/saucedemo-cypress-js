@@ -5,6 +5,13 @@ It validates key flows from SauceDemo and includes a simple API service test for
 
 The automation framework follows a Page Object Model and service layer approach to keep tests readable, reusable, and maintainable.
 
+## Prerequisites
+
+Make sure the following browsers are installed locally before running browser-specific test commands:
+
+- Google Chrome
+- Mozilla Firefox
+
 ## Installation
 
 Install project dependencies:
